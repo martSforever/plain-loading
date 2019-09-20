@@ -1,6 +1,6 @@
 {
   "name": "plain-loading",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/PlainLoading.umd.min.js",
   "style": "dist/PlainLoading.css",
   "files": [
