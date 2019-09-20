@@ -52,12 +52,15 @@
         @keyframes pl-loading-delta-tag {
             0% {
                 transform: scaleY(1);
+                opacity: 1;
             }
             50% {
                 transform: scaleY(0);
+                opacity: 0;
             }
             100% {
                 transform: scaleY(1);
+                opacity: 1;
             }
         }
 
