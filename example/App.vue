@@ -10,9 +10,9 @@
             <label class="app-desc-desc">A loading component based on Vue.js</label>
         </section>
         <section class="app-toolbar">
-            <a class="app-toolbar-item app-toolbar-item-active" href="">Example</a>
-            <a class="app-toolbar-item" href="">Install</a>
-            <a class="app-toolbar-item" href="">Github</a>
+            <a class="app-toolbar-item app-toolbar-item-active">Example</a>
+            <a class="app-toolbar-item" href="https://www.npmjs.com/package/plain-loading" target="_blank">Install</a>
+            <a class="app-toolbar-item" href="https://github.com/martSforever/plain-loading" target="_blank">Github</a>
         </section>
         <section class="app-body">
             <div class="demo">
