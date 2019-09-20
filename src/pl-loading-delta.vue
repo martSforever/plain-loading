@@ -70,7 +70,7 @@
             }
         }
 
-        &.pl-loading-alpha-color-white {
+        &.pl-loading-delta-color-white {
             .pl-loading-tag {
                 background-color: white;
             }

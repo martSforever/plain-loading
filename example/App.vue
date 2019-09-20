@@ -38,7 +38,7 @@
             <div class="demo">
                 <div class="demo-title">Loading Color</div>
                 <div class="demo-content">
-                    <div v-for="color in ['primary','success','warn','error','info']" :key="color">
+                    <div v-for="color in ['primary','success','warn','error','info','white']" :key="color" :style="{backgroundColor:color==='white'?'black':'white'}">
                         <pl-loading :color="color"/>
                         <pl-loading type="beta" :color="color"/>
                         <pl-loading type="gamma" :color="color"/>
@@ -165,6 +165,7 @@
         .custom-color {
             display: flex;
             justify-content: center;
+
             .pl-loading-tag {
                 background-color: #FF7400;
             }
