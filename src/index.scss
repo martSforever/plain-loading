@@ -1,0 +1,61 @@
+/*@formatter:off*/
+$theme: (
+        color-primary:#007afe,
+        color-primary-deep:#004EA5,
+        color-primary-light:#73B5FF,
+        color-primary-lighter:#d5dfff,
+        color-success:#00CC00,
+        color-success-deep:#008500,
+        color-success-light:#67E667,
+        color-success-lighter:#d1f4d1,
+        color-warn:#FF7400,
+        color-warn-deep:#A64B00,
+        color-warn-light:#FFB273,
+        color-warn-lighter:#fff0da,
+        color-error:#F38585,
+        color-error-deep:#A60000,
+        color-error-light:#FF7373,
+        color-error-lighter:#ffd8de,
+        color-info:#dcdfe4,
+        color-info-deep:#76777a,
+        color-info-light:#e7eaef,
+        color-info-lighter:#f1f4f9,
+
+        icon-size:1.25em,
+);
+/*@formatter:on*/
+
+@mixin pl-colors($prefix) {
+  @each $key in (primary, success, warn, error, info, disabled) {
+    $value: map_get($theme, color-#{$key}) !global;
+    $color: map_get($theme, color-#{$key}) !global;
+    $colorDeep: map_get($theme, color-#{$key}-deep) !global;
+    $colorLight: map_get($theme, color-#{$key}-light) !global;
+    $colorLighter: map_get($theme, color-#{$key}-lighter) !global;
+    &.#{$prefix}-color-#{$key} {
+      @content;
+    }
+  }
+}
+
+@mixin pl-sizes($prefix) {
+  @each $key in (large, default, small) {
+    $value: map_get($theme, size-#{$key}) !global;
+    &.#{$prefix}-size-#{$key} {
+      @content;
+    }
+  }
+}
+
+@mixin pl-shapes($prefix) {
+  @each $key in (fillet, round, none) {
+    $value: map_get($theme, border-#{$key}) !global;
+    &.#{$prefix}-shape-#{$key} {
+      @content;
+    }
+  }
+}
+
+@function plVar($key) {
+  @return map_get($theme, $key)
+}

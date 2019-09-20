@@ -26,6 +26,14 @@ module.exports = {
             }
         }
     },
+    css: {
+        sourceMap: true,
+        loaderOptions: {
+            sass: {
+                data: `@import "src/index.scss";`
+            }
+        }
+    },
     chainWebpack: config => {
         config.plugins.delete('prefetch-index')
     }
