@@ -1,17 +1,21 @@
 {
   "name": "plain-loading",
   "version": "0.1.0",
-  "private": true,
+  "main": "dist/PlainLoading.umd.min.js",
+  "style": "dist/PlainLoading.css",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
     "start": "vue-cli-service serve",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "build": "vue-cli-service build",
+    "build:dist": "vue-cli-service build --target lib --name PlainLoading  src/index.js --dest dist --report"
   },
   "devDependencies": {
+    "core-js": "^2.6.5",
+    "vue": "^2.6.10",
     "@vue/cli-plugin-babel": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
     "node-sass": "^4.9.0",
